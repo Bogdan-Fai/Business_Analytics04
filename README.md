@@ -3,6 +3,8 @@
 Summary:
 You will be introduced to the concept of "domain" and learn how to identify domain entities. You will learn what a System Information Model is, how to build one, and how to test the model using CRUD.
 
+💡 [Tap here](https://new.oprosso.net/p/4cb31ec3f47a4596bc758ea1861fb624) **to leave your feedback on the project**. It's anonymous and will help our team make your educational experience better. We recommend completing the survey immediately after the project.
+
 ## Contents
 
 1. [Chapter I](#chapter-i) \
@@ -264,5 +266,3 @@ The first step was to collect orders from stores and caterers in any way possibl
 3. Specify the multiplicity of relationships between entities in the ER diagram.
 4. Describe with verbs the relationships between entities in the ER diagram.
 5. Place the diagram in the turn-in файле ex03\_<product prefix>\_model.xxx (xxx is an extension).
-
-💡 [Tap here](https://forms.yandex.ru/cloud/65b9091702848f0873f105b3/) **to leave your feedback on the project**. Product Team really tries to make your educational experience better.
