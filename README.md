@@ -32,7 +32,7 @@ You will be introduced to the concept of "domain" and learn how to identify doma
 
 ### Preamble <div id="11"></div>
 
-In the previous project, for each system under development, you identified the business requirements (high-level customer goal), got to know the stakeholders - those who are interested in the system in one way or another, learned what a context diagram is, how to build it, and how to use it. In this project, you will learn what a domain is, you will learn to recognize the domain entities with which the system works. You will learn what a CRUD model is and test your domain entities using the CRUD model.
+In the previous project, for each system under development, you identified the business requirements (high-level customer goal), got to know the stakeholders — those who are interested in the system in one way or another, learned what a context diagram is, how to build it, and how to use it. In this project, you will learn what a domain is, you will learn to recognize the domain entities with which the system works. You will learn what a CRUD model is and you will test your domain entities using the CRUD model.
 
 **Literature:**
 
@@ -61,53 +61,53 @@ In the previous project, for each system under development, you identified the b
 
 ### 1. Domain <div id="31"></div>
 
-**Domain** is a part of the real world considered within certain boundaries. 
+**Domain** is a part of the real world that is considered within certain boundaries. 
 
 These are circumstances and conditions that:
 
-- affect the design/change of the system;
+- influence the design/change of the system;
 - are influenced by the design/change of the system;
-- help to understand the system.
+- contribute to the understanding of the system.
 
-The domain may include:
+The domain may include
 
 - real world objects,
 - data flows,
-- people,
+- people
 - organizations,
 - business processes,
 - ideas,
 - technologies,
 - goals and tasks,
-- connections between any of the above.
+- relationships between any of the above.
 
 That is, the domain includes not only the system and the external entities related to it, but also all the concepts contained in the system and somehow related to it. Everything that enters and surrounds the system. 
 
-Figure 1 shows the context of the system according to Task 1, the green area is the context, the dashed line is the boundaries of the context. In the context we have selected the system and its environment (external entities) that directly interact with the system - the regulator and the sanitary and epidemiological surveillance. 
+Figure 1 shows the context of the system according to Task 1, the green area is the context, the dashed line is the boundaries of the context. In the context, we have selected the system and its environment (external entities) that directly interact with the system — the regulator and the sanitary and epidemiological surveillance. 
 
-Note that the concept of context is not directly related to the Context class in programming (providing access to the underlying functions of an application).
+Note that the concept of context is not directly related to the Context class in programming (which provides access to the underlying functions of an application).
 
 *Figure 1.*
 
 ![](misc/images/img1_eng.png)
 
-Relationships and dependencies are important domain concepts. It is the knowledge of concepts, the understanding of dependencies existing in the domain that is valuable for an analyst involved in the development of IT systems. But it takes a lot of time to understand a new domain well. Therefore, knowledge of one or more domains is highly valued in IT teams. Read more about methods for immersing yourself in a new domain:
+Relationships and dependencies are important concepts in the domain. It is the knowledge of concepts, the understanding of dependencies that exist in the domain, that is valuable for an analyst involved in the development of IT systems. But it takes a lot of time to understand a new domain well. Therefore, knowledge of one or more domains is highly valued in IT teams. Read more about methods for immersing yourself in a new domain:
 
 1. [Irina Gertovskaya "Immersion in a new domain. Analyst's check-list"](https://www.youtube.com/watch?v=XTyCgsKYHQo&t=4s).
 2. [Marina Davydova "Workshop: Research of the domain as a quest in the analyst's work"](https://www.youtube.com/watch?v=5r7-XfQ9FK8&list=PLQGve2f3j-H1s-w3V_w-pIvvGXuaoLvof&index=1&t=376s).
 
 ### 2. Identification of Entities and Actions With Them <div id="32"></div>
 
-There is a simple way to identify entities in a domain: in texts describing problems and needs, we distinguish "noun-verb" or "noun - verbal noun" pairs. If a noun is an object in the real world (or in the virtual world, but not yet in our system), and if it occurs several times, it is a candidate for objects (entities) in the system. Read more about the order of entity identification:
+There is a simple way to identify entities in a domain: in texts describing problems and needs, we distinguish "noun-verb" or "noun — verbal noun" pairs. If a noun is an object in the real world (or in the virtual world, but not yet in our system), and if it occurs several times, it is a candidate for objects (entities) in the system. Read more about the order of entity identification:
 
-1. Identification of candidates for entity
-   Underline nouns and especially noun-verb or verbal-noun pairs in texts describing a task or problem. When actions are performed on something, it is a candidate for system objects.
+1. Identifying candidates for entity
+   Underline nouns and especially noun-verb or verb-noun pairs in texts describing a task or problem. When actions are performed on something, it is a candidate for system objects.
 
-2. Identification of entities
-   Identify from the underlined nouns, objects, events - everything that will be present in the data, on which users or the system itself will work in our system. Each entity must be coherent and logically separate from all others.
+2. Identifying entities
+   Identify from the underlined nouns, objects, events — everything that will be present in the data on which users or the system itself will work in our system. Each entity must be coherent and logically separate from all others.
 
 3. Defining the key properties of each entity
-   Define properties (attributes) unique to each entity. Sometimes in the text it is a noun that is somehow related to the noun identified as the entity. There can be one or more unique attributes for each entity. 
+   Define properties (attributes) that are unique to each entity. Sometimes in the text it is a noun that is somehow related to the noun identified as the entity. There may be one or more unique attributes for each entity. 
 
 4. Defining relationships between entities \
    Identify relationships between entities:
@@ -147,60 +147,60 @@ Sometimes, when creating the matrix, there are questions that are not answered i
 | Entity   | CREATE          |                        | READ                    |        | UPDATE          |                             | DELETE                |                                        |
 | -------- | --------------- | ---------------------- | ----------------------- | ------ | --------------- | --------------------------- | --------------------- | -------------------------------------- |
 |          | Role            | Action                 | Role                    | Action | Role            | Action                      | Role                  | Action                                 |
-| Service  | Client, visitor | making an appointmnent | Master, Manager         | views  | Client, Manager | changes the type of service | Manager               | transfers to the archive after payment |
-| Schedule | Manager         | creates                | Master, Client, Visitor | views  | Manager         | changes                     | Check with the client | Check with the client                  |
+| Service  | Client, visitor | Making an appointmnent | Master, Manager         | views  | Client, Manager | Changes the type of service | Manager               | Transfers to the archive after payment |
+| Schedule | Manager         | Creates                | Master, Client, Visitor | Views  | Manager         | Changes                     | Check with the client | Check with the client                  |
 
 ### 4. Data Dictionary <div id="34"></div>
 
-**Data Dictionary** is a tool, a technique that allows data to be described in business terms, as well as containing other information about the data: information about data types and formats, details of data structures and regulatory reference information, and possibly other constraints such as security. Thus, data dictionaries are one way of maintaining metadata.
+A **data dictionary** is a tool, a technique, that allows data to be described in business terms and to contain other information about the data: information about data types and formats, details of data structures and regulatory reference information, and possibly other constraints such as security. Thus, data dictionaries are a way to maintain metadata.
 
 |                          | Glossary                                              | Data Dictionary                                              |
 | ------------------------ | ----------------------------------------------------- | ------------------------------------------------------------ |
-| What it contains         | Terms, abbreviations, concepts, business description  | Concepts, business description, technical description of data: - data types - data formats - data structure details - constraints - binding to regulatory reference information - security policy - etc. |
+| What it contains         | Terms, abbreviations, concepts, business description  | Concepts, business description, technical description of data:<br> - data types,<br> - data formats,<br> - data structure details,<br> - constraints,<br> - binding to regulatory reference information,<br> - security policy,<br> - etc. |
 | Content                  | Atomic concepts: one term - one object of the domain  | May contain composite elements that include several simple or also composite elements |
 | Specifics, peculiarities | General-purpose, describes the domain for any project | Specific to IT system development, implementation, maintenance projects |
 
 ### 5. ER diagram <div id="35"></div>
 
-One of the ways to visualize the domain is the ER diagram data model (Entity-Relationship diagram).
-Recall that a model is a simplified description of reality that allows you to explore or process an object. Depending on the goal of the team, we develop such data models:
+One way to visualize the domain is through the data model of an Entity-Relationship Diagram (ER Diagram).
+Remember that a model is a simplified description of reality that allows you to explore or manipulate an object. Depending on the team's goal, we develop such data models:
 
 - Conceptual model;
-- Logic model;
+- Logical model;
 - Physical model.
 
-**Conceptual data model**
+**Conceptual Data Model**
 
-Sets the basic constructs, describes the semantics of the domain.
-It is often used at the initial planning stage and does not contain detailed attribute information.
+Defines the basic constructs, describes the semantics of the domain.
+It is often used in the initial planning phase and does not contain detailed attribute information.
 Includes:
 
-- main entities;
-- relationships.
+- Main entities;
+- Relationships.
 
-Developing a conceptual data model is the responsibility of the analyst.
+The development of a conceptual data model is the responsibility of the analyst.
 
-**Logical data model**
+**Logical Data Model**
 
-Represents the content and relationships of the business and is an extension of the conceptual model. It represents business information and is defined by business rules and is defined by a specific data manipulation technology.
+Represents the content and relationships of the business and is an extension of the conceptual model. It represents business information and is defined by business rules and a specific data manipulation technology.
 Includes:
 
-- entities;
-- attributes;
-- keys;
-- relationships.
+- Entities;
+- Attributes;
+- Keys;
+- Relationships.
 
 The logical data model is often developed by an analyst, but in a team with an architect or developer.
 
-**Physical data model**
+**Physical Data Model**
 
-Provides code development and everything related to it. Is linked to a specific DBMS.
+Provides code development and all that goes with it. Tied to a specific DBMS.
 Includes:
 
-- all necessary tables, columns, relationships;
-- database properties for physical implementation of databases:
-  - database performance;
-  - indexing strategy;
+- All required tables, columns, relationships;
+- Database properties for physical implementation of databases:
+  - Database performance;
+  - Indexing strategy;
   - physical repository;
   - denormalization.
 
@@ -214,7 +214,7 @@ A physical data model based on a logical model is developed by a developer or ar
 
 The management of a chain of barbershops decided to implement an online booking system. The main objective is to develop the business by expanding the customer base through the possibility of online registration, as well as to reduce employee labour costs and manual labour by automatically informing customers through communication channels. 
 
-Both registered and unregistered visitors can book an appointment on the website. When making an appointment, they can select the type of service: hairdressing or cosmetology, as well as the service itself, the master and the time from the available intervals. The system should provide automatic sending of reminders to clients through the communication channel chosen by the client (Telegram, WhatsApp, VK, sms) according to the schedule set by the manager. After receiving a service, the system offers the client to evaluate the service and write suggestions on how to improve the work.
+Both registered and unregistered visitors can book an appointment on the website. When making an appointment, they can select the type of service: hairdressing or cosmetology, as well as the service itself, the master and the time from the available intervals. The system should provide automatic sending of reminders to clients through the communication channel chosen by the client (Telegram, WhatsApp, VK, SMS) according to the schedule set by the manager. After receiving a service, the system offers the client to evaluate the service and write suggestions on how to improve the work.
 
 The schedule of masters and the services provided by each master should be entered by the manager, who may be more than one person. This person is also responsible for keeping the schedule up to date and adjusting it if necessary, communicating with customers manually, marking the service, charging and accepting payment, sending the payment data to the accounting department. The manager can also receive reports on completed services and view customer feedback.
 
@@ -261,7 +261,7 @@ The first step was to collect orders from stores and caterers in any way possibl
 
 **For each task:**
 
-1. Build an ER diagram - a logical data model.
+1. Build an ER diagram — a logical data model.
 2. Include your selected entities in the ER diagram, supporting directories and decoupling tables for M:M relationships.
 3. Specify the multiplicity of relationships between entities in the ER diagram.
 4. Describe with verbs the relationships between entities in the ER diagram.
