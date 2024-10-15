@@ -93,8 +93,8 @@ Note that the concept of context is not directly related to the Context class in
 
 Relationships and dependencies are important concepts in the domain. It is the knowledge of concepts, the understanding of dependencies that exist in the domain, that is valuable for an analyst involved in the development of IT systems. But it takes a lot of time to understand a new domain well. Therefore, knowledge of one or more domains is highly valued in IT teams. Read more about methods for immersing yourself in a new domain:
 
-1. [Irina Gertovskaya "Immersion in a new domain. Analyst's check-list"](https://www.youtube.com/watch?v=XTyCgsKYHQo&t=4s).
-2. [Marina Davydova "Workshop: Research of the domain as a quest in the analyst's work"](https://www.youtube.com/watch?v=5r7-XfQ9FK8&list=PLQGve2f3j-H1s-w3V_w-pIvvGXuaoLvof&index=1&t=376s).
+1. [Irina Gertovskaya "Immersion in a new domain. Analyst's check-list"](https://rutube.ru/video/3e68d3f9e376e6a212acef561d4166ff/?ysclid=m0m7njiwmy714477779).
+2. [Marina Davydova "Workshop: Research of the domain as a quest in the analyst's work"](https://rutube.ru/video/3e68d3f9e376e6a212acef561d4166ff/?ysclid=m0m7njiwmy714477779).
 
 ### 2. Identification of Entities and Actions With Them <div id="32"></div>
 
