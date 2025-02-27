@@ -28,7 +28,7 @@ You will be introduced to the concept of "domain" and learn how to identify doma
 
 ## Chapter I <div id="chapter-i"></div>
 
-![](misc/images/Illustration_04.jpg)
+![Illustration_04](misc/images/Illustration_04.jpg)
 
 ### Preamble <div id="11"></div>
 
@@ -89,7 +89,7 @@ Note that the concept of context is not directly related to the Context class in
 
 *Figure 1.*
 
-![](misc/images/img1_eng.png)
+![img1_eng](misc/images/img1_eng.png)
 
 Relationships and dependencies are important concepts in the domain. It is the knowledge of concepts, the understanding of dependencies that exist in the domain, that is valuable for an analyst involved in the development of IT systems. But it takes a lot of time to understand a new domain well. Therefore, knowledge of one or more domains is highly valued in IT teams. Read more about methods for immersing yourself in a new domain:
 
@@ -100,29 +100,36 @@ Relationships and dependencies are important concepts in the domain. It is the k
 
 There is a simple way to identify entities in a domain: in texts describing problems and needs, we distinguish "noun-verb" or "noun — verbal noun" pairs. If a noun is an object in the real world (or in the virtual world, but not yet in our system), and if it occurs several times, it is a candidate for objects (entities) in the system. Read more about the order of entity identification:
 
-1. Identifying candidates for entity
+1. Identifying candidates for entity.
+
    Underline nouns and especially noun-verb or verb-noun pairs in texts describing a task or problem. When actions are performed on something, it is a candidate for system objects.
 
-2. Identifying entities
+2. Identifying entities.
+
    Identify from the underlined nouns, objects, events — everything that will be present in the data on which users or the system itself will work in our system. Each entity must be coherent and logically separate from all others.
 
-3. Defining the key properties of each entity
+3. Defining the key properties of each entity.
+
    Define properties (attributes) that are unique to each entity. Sometimes in the text it is a noun that is somehow related to the noun identified as the entity. There may be one or more unique attributes for each entity. 
 
-4. Defining relationships between entities \
+4. Defining relationships between entities.
+
    Identify relationships between entities:
    - 1:1 (one-to-one);
    - 1:М (one-to-many);
    - М:1 (many-to-one);
    - М:М (many-to-many).
 
-5. Mapping attributes to entities
+5. Mapping attributes to entities.
+
    Mapping attributes to entities, taking into account how the business will use the data. Identification of possible attribute values and conditions, constraints.
 
-6. Assignment of keys and degrees of normalization
+6. Assignment of keys and degrees of normalization.
+
    Normalization is a method of organizing data models in which identifiers (keys) are assigned to groups of data to establish relationships between them without repeating the data.
 
-7. Completion, testing of the data model
+7. Completion, testing of the data model.
+
    Modeling is an iterative process, it should be repeated and refined to meet the needs of the business.
 
 ### 3. CRUD Entity Testing <div id="33"></div>
